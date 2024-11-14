@@ -27,3 +27,9 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+* At the start of each recursive call to fibonacci() all elements from 0 to (i-1) are correctly determined. In the base case i=0, arr[i] = 0. And in the base case i=1, arr[i] = 1 with arr[i-1] = 0. For all i > 1, the value of arr[i] is calculated to be the sum of the two prior elements, arr[i-1] + arr[i-2]. Given that the first two elements (the base cases) are properly determined then all of the following elements are also correctly computed as the sum of arr[i-1] + arr[i-2].
+
+
+## Plagiarism Note:
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
