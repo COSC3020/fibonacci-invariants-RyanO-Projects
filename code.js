@@ -17,6 +17,7 @@ function fibonacci(i, ceiling, arr)
         fibonacci(i+1, ceiling, arr);
         return;
     }
+
     if( i == 1 && i <= ceiling)
     {
         arr[1] = 1;
@@ -26,11 +27,9 @@ function fibonacci(i, ceiling, arr)
 
     // for (n > 1) take prior two elements and store sum in array[i]
     // No longer base cases, sum prior elements and move to next element.
-    arr[i] = arr[i-1] + arr[i-2];
-
-    //
     if( i <= ceiling )
     {
+        arr[i] = arr[i-1] + arr[i-2];
         fibonacci(i+1, ceiling, arr);
     }
 
