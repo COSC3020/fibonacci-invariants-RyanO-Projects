@@ -15,19 +15,16 @@ function fibonacci(i, ceiling, arr)
     {
         arr[0] = 0;
         fibonacci(i+1, ceiling, arr);
-        return;
     }
 
-    if( i == 1 && i <= ceiling)
+    else if( i == 1 && i <= ceiling)
     {
         arr[1] = 1;
         fibonacci(i+1, ceiling, arr);
-        return;
     }
 
-    // for (n > 1) take prior two elements and store sum in array[i]
     // No longer base cases, sum prior elements and move to next element.
-    if( i <= ceiling )
+    else if( i <= ceiling )
     {
         arr[i] = arr[i-1] + arr[i-2];
         fibonacci(i+1, ceiling, arr);
